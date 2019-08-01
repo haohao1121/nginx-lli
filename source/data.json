@@ -1,0 +1,70 @@
+{
+  "titleList": [
+    {
+      "id": "",
+      "name": "基础地址",
+      "childList": [
+        {
+          "id": "",
+          "name": "团队协同",
+          "childList": [
+            {
+              "id": "",
+              "name": "111",
+              "localUrl": "www.baidu.com",
+              "outUrl": "www.baidu.com",
+              "remark": "jira备注"
+            },
+            {
+              "id": "",
+              "name": "aaa",
+              "localUrl": "www.baidu.com",
+              "outUrl": "www.baidu.com",
+              "remark": "aaaa"
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "版本管理",
+          "childList": [
+            {
+              "id": "",
+              "name": "bbb",
+              "localUrl": "www.baidu.com",
+              "outUrl": "www.baidu.com",
+              "remark": "jira备注"
+            },
+            {
+              "id": "",
+              "name": "222",
+              "localUrl": "www.baidu.com",
+              "outUrl": "www.baidu.com",
+              "remark": "aaaa"
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "构建及质量管理",
+          "childList": [
+            {
+              "id": "",
+              "name": "333",
+              "localUrl": "www.baidu.com",
+              "outUrl": "www.baidu.com",
+              "remark": "jira备注"
+            },
+            {
+              "id": "",
+              "name": "ccc",
+              "localUrl": "www.baidu.com",
+              "outUrl": "www.baidu.com",
+              "remark": "aaaa"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
