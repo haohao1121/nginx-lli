@@ -11,7 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body style="font-family:KaiTi">
+<body>
 <div class="container" style="width: 960px;margin-top: 10px;">
     <nav class="navbar navbar-default" role="navigation">
         <a class="navbar-brand">LLI常用管理地址总汇</a>
@@ -21,51 +21,7 @@
     <p class="text-right" style="margin-top: 20px;">
         <button type="button" id="isNotifi" class="btn btn-lg">已关闭提示</button>
     </p>
-    <div class="row">
-        <hr/>
-        <p>基础地址</p>
-        <div class="row" style="padding: 10px 30px;">
-            <div class="col-md-4">
-                <div class="panel panel-success">
-                    <div class="panel-heading">团队协同</div>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a onclick="toGo(1.1)">JIRA</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a onclick="toGo(1.2)">Confluence</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-info">
-                    <div class="panel-heading">版本管理</div>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a onclick="toGo(2.1)">代码面板 (GitLab)</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a onclick="toGo(2.3)">产品仓库 (Nexus)</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-danger">
-                    <div class="panel-heading">构建及质量管理</div>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a onclick="toGo(3.1)">Jenkins</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a onclick="toGo(3.2)">SonarQube</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!--动态渲染导航列表-->
     <div id="menuList" class="row"></div>
 </div>
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
@@ -77,10 +33,6 @@
     </div>
 </div>
 </body>
-
-<!--<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>-->
-<!--<script src="https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
-<!--<script type="text/javascript" src="https://apps.bdimg.com/libs/pnotify/2.0.0/pnotify.core.min.js"></script>-->
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/pnotify.core.min.js"></script>
