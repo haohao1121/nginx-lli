@@ -1,6 +1,39 @@
 //是否为内网
 var innerip;
 
+//得到每个点击的需要跳转的地址具体常量类
+function getConstant(name) {
+    var constants = {
+        1.1: "任务管理---Jira<br><br>默认账号：姓名全拼<br>默认密码：姓名简拼<br>地址：",
+        1.11: "https://jira.cpyysyb.cn:11112",
+        1.111: "",
+
+        1.2: "项目支持---Confluence<br><br>默认账号：姓名全拼<br>默认密码：姓名简拼<br>地址：",
+        1.21: "https://confluence.cpyysyb.cn:11113",
+        1.211: "https://confluence.cpyysyb.cn:11113",
+
+
+        2.1: "代码仓库---GitLab<br><br>默认账号：姓名全拼<br>默认密码：姓名全拼(不足8位末尾补0)<br><br>地址：",
+        2.11: "https://git.cpyysyb.cn:11114/git",
+        2.111: "https://git.cpyysyb.cn:11114/git",
+
+        2.3: "产品仓库---Nexus<br>地址：",
+        2.31: "http://192.168.85.6:8081",
+        2.311: "",
+
+        3.1: "构建管理---Jenkins<br>地址：http://192.168.85.5:6060",
+        3.11: "http://192.168.85.5:6060",
+        3.111: "",
+
+        3.2: "质量管理---Sonar<br>地址：https://cpyysyb.cn:11111/sonar/",
+        3.21: "https://sonar.cpyysyb.cn:11115",
+        3.211: "",
+
+
+    };
+    return constants[name]
+}
+
 //是否进行提示的按钮监听（切换是否显示提示)
 $('#isNotifi').on('click', function () {
     var $btn = $(this).text('変更中.......').blur();
@@ -15,7 +48,6 @@ $('#isNotifi').on('click', function () {
 
 //点击条目按钮跳转
 function toGo(index) {
-    //判断是否开启提示
     if ($('#isNotifi').hasClass("btn-success"))
         giveNotfi(index);
     else {
@@ -26,16 +58,12 @@ function toGo(index) {
 //跳转link
 function openLink(index) {
     //是否内网
-    if (innerip) {
-        window.open(index.localUrl);
-    } else {
-        //外网
-        if (index.outUrl === '') {
-            AddressInaccessible();
-        } else {
-            window.open(index.outUrl);
-        }
-    }
+    if (innerip)
+        window.open(getConstant(index + '1'));
+    else if (getConstant(index + '11') === '')
+        AddressInaccessible();
+    else
+        window.open(getConstant(index + '11'));
 }
 
 //提示窗
@@ -67,13 +95,12 @@ function ShowNotice(title, text, type, delay) {
 
 //链接提示窗
 function giveNotfi(index) {
-    var text = index.remark;
-    //判断描述是否为空
+    var text = getConstant(index);
     if (text === "") {
         openLink(index);
         return false;
     }
-    var percent = 6;
+    var percent = 5;
     var notice = new PNotify({
         title: "请稍后",
         addclass: 'stack-top-left bg-primary',
@@ -105,7 +132,7 @@ function giveNotfi(index) {
                 title: percent + " 秒后为您跳转",
                 text: "<br>" + text
             };
-            if (percent === 1) options.title = "即将跳转，请稍后";
+            if (percent === 3) options.title = "即将跳转，请稍后";
             if (percent <= 0) {
                 window.clearInterval(interval);
                 options.title = "";

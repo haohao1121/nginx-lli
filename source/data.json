@@ -11,15 +11,15 @@
             {
               "id": "",
               "name": "111",
-              "localUrl": "www.baidu.com",
-              "outUrl": "www.baidu.com",
+              "localUrl": "http://www.baidu.com",
+              "outUrl": "http://www.baidu.com",
               "remark": "jira备注"
             },
             {
               "id": "",
               "name": "aaa",
-              "localUrl": "www.baidu.com",
-              "outUrl": "www.baidu.com",
+              "localUrl": "http://www.baidu.com",
+              "outUrl": "http://www.baidu.com",
               "remark": "aaaa"
             }
           ]
@@ -31,16 +31,16 @@
             {
               "id": "",
               "name": "bbb",
-              "localUrl": "www.baidu.com",
-              "outUrl": "www.baidu.com",
+              "localUrl": "http://www.baidu.com",
+              "outUrl": "http://www.baidu.com",
               "remark": "jira备注"
             },
             {
               "id": "",
               "name": "222",
-              "localUrl": "www.baidu.com",
-              "outUrl": "www.baidu.com",
-              "remark": "aaaa"
+              "localUrl": "http://www.baidu.com",
+              "outUrl": "http://www.baidu.com",
+              "remark": ""
             }
           ]
         },
@@ -51,15 +51,15 @@
             {
               "id": "",
               "name": "333",
-              "localUrl": "www.baidu.com",
-              "outUrl": "www.baidu.com",
+              "localUrl": "http://www.baidu.com",
+              "outUrl": "http://www.baidu.com",
               "remark": "jira备注"
             },
             {
               "id": "",
               "name": "ccc",
-              "localUrl": "www.baidu.com",
-              "outUrl": "www.baidu.com",
+              "localUrl": "http://www.baidu.com",
+              "outUrl": "http://www.baidu.com",
               "remark": "aaaa"
             }
           ]
