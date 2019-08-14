@@ -10,17 +10,24 @@
           "childList": [
             {
               "id": "",
-              "name": "111",
-              "localUrl": "http://www.baidu.com",
-              "outUrl": "http://www.baidu.com",
-              "remark": "jira备注"
+              "name": "Easy Mock",
+              "localUrl": "http://t420.lli.com:7300",
+              "outUrl": "http://t420.lli.com:7300",
+              "remark": "默认账号：admin <br> 密码： admin123 <br>"
             },
             {
               "id": "",
-              "name": "aaa",
-              "localUrl": "http://www.baidu.com",
-              "outUrl": "http://www.baidu.com",
-              "remark": "aaaa"
+              "name": "Jumpserver-test",
+              "localUrl": "http://t420.lli.com",
+              "outUrl": "http://t420.lli.com",
+              "remark": "默认账号：admin <br> 密码： admin <br>"
+            },
+            {
+              "id": "",
+              "name": "Teleport",
+              "localUrl": "http://t420.lli.com:7190",
+              "outUrl": "http://t420.lli.com:7190",
+              "remark": "默认账号：admin <br> 密码： admin123 <br>"
             }
           ]
         },
@@ -30,17 +37,17 @@
           "childList": [
             {
               "id": "",
-              "name": "bbb",
-              "localUrl": "http://www.baidu.com",
-              "outUrl": "http://www.baidu.com",
-              "remark": "jira备注"
+              "name": "代码仓库---GitLab",
+              "localUrl": "http://gitlab.lli.com:7001",
+              "outUrl": "http://gitlab.lli.com:7001",
+              "remark": "默认账号：姓名全拼 <br> 默认密码：姓名全拼(不足8位末尾补0) <br>"
             },
             {
               "id": "",
-              "name": "222",
-              "localUrl": "http://www.baidu.com",
-              "outUrl": "http://www.baidu.com",
-              "remark": ""
+              "name": "Nexus",
+              "localUrl": "http://t420.lli.com:8081",
+              "outUrl": "http://gitlab.lli.com:8081",
+              "remark": "默认账号：admin <br> 密码： admin123 <br>"
             }
           ]
         },
@@ -50,17 +57,42 @@
           "childList": [
             {
               "id": "",
-              "name": "333",
-              "localUrl": "http://www.baidu.com",
-              "outUrl": "http://www.baidu.com",
-              "remark": "jira备注"
-            },
+              "name": "Portainer",
+              "localUrl": "http://t420.lli.com:9000",
+              "outUrl": "http://t420.lli.com:9000",
+              "remark": "默认账号：admin  密码： admin123"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "",
+      "name": "个人网站",
+      "childList": [
+        {
+          "id": "",
+          "name": "腾讯云",
+          "childList": [
             {
               "id": "",
-              "name": "ccc",
-              "localUrl": "http://www.baidu.com",
-              "outUrl": "http://www.baidu.com",
-              "remark": "aaaa"
+              "name": "WIKI导航",
+              "localUrl": "http://yun.lli.com:6001",
+              "outUrl": "http://140.143.140.139:6001",
+              "remark": "WIKI导航"
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "常用地址",
+          "childList": [
+            {
+              "id": "",
+              "name": "个人博客",
+              "localUrl": "https://haohao1121.github.io/",
+              "outUrl": "https://haohao1121.github.io/",
+              "remark": "Hexo 博客"
             }
           ]
         }
