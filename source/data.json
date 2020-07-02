@@ -17,17 +17,17 @@
             },
             {
               "id": "",
-              "name": "Jumpserver-test",
-              "localUrl": "http://t420.lli.com",
-              "outUrl": "http://t420.lli.com",
+              "name": "跳板机---Jumpserver",
+              "localUrl": "http://t420.lli.com:6300",
+              "outUrl": "http://t420.lli.com:6300",
               "remark": "默认账号：admin <br> 密码： admin <br>"
             },
             {
               "id": "",
-              "name": "Teleport",
-              "localUrl": "http://t420.lli.com:7190",
-              "outUrl": "http://t420.lli.com:7190",
-              "remark": "默认账号：admin <br> 密码： admin123 <br>"
+              "name": "文件服务器--FTP",
+              "localUrl": "http://huashuo.lli.com",
+              "outUrl": "http://huashuo.lli.com",
+              "remark": "Nginx+vsftp  静态文件服务器"
             }
           ]
         },
@@ -38,16 +38,23 @@
             {
               "id": "",
               "name": "代码仓库---GitLab",
-              "localUrl": "http://gitlab.lli.com:7001",
-              "outUrl": "http://gitlab.lli.com:7001",
+              "localUrl": "http://gitlab.lli.com:6200",
+              "outUrl": "http://gitlab.lli.com:6200",
               "remark": "默认账号：姓名全拼 <br> 默认密码：姓名全拼(不足8位末尾补0) <br>"
             },
             {
               "id": "",
-              "name": "Nexus",
-              "localUrl": "http://t420.lli.com:8081",
-              "outUrl": "http://gitlab.lli.com:8081",
+              "name": "Maven仓库---Nexus",
+              "localUrl": "http://yun.lli.com:6100",
+              "outUrl": "http://yun.lli.com:6100",
               "remark": "默认账号：admin <br> 密码： admin123 <br>"
+            },
+            {
+              "id": "",
+              "name": "镜像仓库---Harbor",
+              "localUrl": "http://harbor.lli.com:6100",
+              "outUrl": "http://harbor.lli.com:6100",
+              "remark": "默认账号：admin <br> 密码： 123456 <br>"
             }
           ]
         },
@@ -58,9 +65,16 @@
             {
               "id": "",
               "name": "Portainer",
-              "localUrl": "http://t420.lli.com:9000",
-              "outUrl": "http://t420.lli.com:9000",
+              "localUrl": "http://t420.lli.com:7100",
+              "outUrl": "http://t420.lli.com:7100",
               "remark": "默认账号：admin  密码： admin123"
+            },
+            {
+              "id": "",
+              "name": "Jenkins",
+              "localUrl": "http://t420.lli.com:7000",
+              "outUrl": "http://t420.lli.com:7000",
+              "remark": "默认账号：admin  密码： admin"
             }
           ]
         }
@@ -77,8 +91,8 @@
             {
               "id": "",
               "name": "WIKI导航",
-              "localUrl": "http://yun.lli.com:6001",
-              "outUrl": "http://140.143.140.139:6001",
+              "localUrl": "http://yun.lli.com",
+              "outUrl": "http://140.143.140.139",
               "remark": "WIKI导航"
             }
           ]
