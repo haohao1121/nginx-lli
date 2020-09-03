@@ -87,7 +87,7 @@
         var thirdHtml = "";
         //判断三级分类集合
         if ($.isEmptyObject(data) || data.childList.length === 0) {
-            return false;
+            return thirdHtml;
         }
 
         //开始div

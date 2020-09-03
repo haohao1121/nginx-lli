@@ -24,10 +24,10 @@
             },
             {
               "id": "",
-              "name": "文件服务器--FTP",
-              "localUrl": "http://huashuo.lli.com",
-              "outUrl": "http://huashuo.lli.com",
-              "remark": "Nginx+vsftp  静态文件服务器"
+              "name": "文件服务器--FastDFS",
+              "localUrl": "http://huashuo.lli.com:8888",
+              "outUrl": "http://huashuo.lli.com:8888",
+              "remark": "Nginx+FastDFS  静态文件服务器"
             }
           ]
         },
@@ -75,7 +75,45 @@
               "localUrl": "http://t420.lli.com:7000",
               "outUrl": "http://t420.lli.com:7000",
               "remark": "默认账号：admin  密码： admin"
+            },
+            {
+              "id": "",
+              "name": "Sonar",
+              "localUrl": "",
+              "outUrl": "",
+              "remark": "默认账号：admin  密码： admin"
             }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "",
+      "name": "注册中心",
+      "childList": [
+        {
+          "id": "",
+          "name": "开发环境",
+          "childList": [
+            {
+              "id": "",
+              "name": "Eureka",
+              "localUrl": "http://yun.lli.com",
+              "outUrl": "http://140.143.140.139",
+              "remark": "WIKI导航"
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "UAT环境",
+          "childList": [
+          ]
+        },
+        {
+          "id": "",
+          "name": "生产环境",
+          "childList": [
           ]
         }
       ]
