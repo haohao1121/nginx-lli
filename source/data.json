@@ -98,9 +98,30 @@
             {
               "id": "",
               "name": "Eureka",
-              "localUrl": "http://yun.lli.com",
-              "outUrl": "http://140.143.140.139",
-              "remark": "WIKI导航"
+              "localUrl": "http://t420.lli.com:7001/",
+              "outUrl": "http://t420.lli.com:7001/",
+              "remark": "Eureka注册中心-开发环境,账号:lli 密码:lli"
+            },
+            {
+              "id": "",
+              "name": "Consul",
+              "localUrl": "http://t420.lli.com:8500/",
+              "outUrl": "http://t420.lli.com:8500/",
+              "remark": "Consul注册中心-开发环境"
+            },
+            {
+              "id": "",
+              "name": "Zookeeper-zkui",
+              "localUrl": "",
+              "outUrl": "",
+              "remark": "Zookeeper-zkui"
+            },
+            {
+              "id": "",
+              "name": "Nacos",
+              "localUrl": "",
+              "outUrl": "",
+              "remark": ""
             }
           ]
         },
@@ -113,6 +134,44 @@
         {
           "id": "",
           "name": "生产环境",
+          "childList": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": "",
+      "name": "集群组件",
+      "childList": [
+        {
+          "id": "",
+          "name": "服务监控",
+          "childList": [
+            {
+              "id": "",
+              "name": "Dubbo-Admin",
+              "localUrl": "",
+              "outUrl": "",
+              "remark": "Dubbo微服务监控"
+            },
+            {
+              "id": "",
+              "name": "Spring Cloud Admin",
+              "localUrl": "",
+              "outUrl": "",
+              "remark": "Spring Cloud微服务监控"
+            }
+          ]
+        },
+        {
+          "id": "",
+          "name": "链路追踪",
+          "childList": [
+          ]
+        },
+        {
+          "id": "",
+          "name": "系统日志",
           "childList": [
           ]
         }

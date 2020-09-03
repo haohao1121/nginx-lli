@@ -27,7 +27,11 @@ function toGo(index) {
 function openLink(index) {
     //是否内网
     if (innerip) {
-        window.open(index.localUrl);
+        if (index.localUrl === '') {
+            AddressNotFound();
+        } else {
+            window.open(index.localUrl);
+        }
     } else {
         //外网
         if (index.outUrl === '') {
@@ -36,6 +40,18 @@ function openLink(index) {
             window.open(index.outUrl);
         }
     }
+}
+
+//访问地址为空
+function AddressNotFound() {
+    //展示提示信息
+    ShowNotice('十分抱歉!', '该模块尚未完成部署,请耐心等待!', 'info', 1000);
+}
+
+// 不存在外网地址
+function AddressInaccessible() {
+    //展示提示信息
+    ShowNotice('十分抱歉!', '您处于外网访问模式，但要访问的地址可能不存在外网形式访问', 'error', 1000);
 }
 
 //提示窗
@@ -131,13 +147,6 @@ function giveNotfi(index) {
     }, 500);
 }
 
-
-// 不存在外网地址
-function AddressInaccessible() {
-    //展示提示信息
-    ShowNotice('十分抱歉!', '您处于外网访问模式，但要访问的地址可能不存在外网形式访问', 'error', 1000);
-}
-
 //检测是否为外网访问
 (function () {
     // 提示语
@@ -146,7 +155,7 @@ function AddressInaccessible() {
     var noticeType;
 
     //判断url地址
-    if (document.URL.indexOf("cpyysyb.cn") > 0) {
+    if (document.URL.indexOf("ll1121.cn") > 0) {
         checkNetMessage = '检测到您正处于外网环境，所有的定向将会以外网形式跳转';
         innerip = false;
         noticeType = 'success';
