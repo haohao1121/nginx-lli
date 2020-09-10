@@ -112,8 +112,8 @@
             {
               "id": "",
               "name": "Zookeeper-zkui",
-              "localUrl": "",
-              "outUrl": "",
+              "localUrl": "http://t420.lli.com:9090/",
+              "outUrl": "http://t420.lli.com:9090/",
               "remark": "Zookeeper-zkui"
             },
             {
@@ -157,8 +157,8 @@
             {
               "id": "",
               "name": "Spring Cloud Admin",
-              "localUrl": "",
-              "outUrl": "",
+              "localUrl": "http://t420.lli.com:8765/",
+              "outUrl": "http://t420.lli.com:8765/",
               "remark": "Spring Cloud微服务监控"
             }
           ]
